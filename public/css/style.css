@@ -1,0 +1,122 @@
+*{
+  padding: 0;
+  margin:0;
+}
+body {
+
+  background-size: contain;
+text-align: center;
+margin-top: 50px;
+margin-bottom: 100px;
+font-style: oblique;
+}
+
+.header-container {
+  margin: auto;
+  margin-bottom: 50px;
+}
+.containerContact {
+  width: 80%;
+
+  max-width: 600px;
+
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0px 0px 20px #00000010;
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+h1 {
+  color: blue;
+
+}
+.h2 {
+  margin-top: 50px;
+}
+.container{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.img{
+  /* margin-top: 100px; */
+  /* margin-left: 50px; */
+}
+.image-container img{
+  width:100%;
+  height:100%;
+}
+
+.set {
+  width: 100%;
+  margin: 10% 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.name {
+  margin-left: 200px;
+}
+
+.inputt {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+textarea{
+  resize: vertical;
+}
+footer {
+  text-align: center;
+  height: 40px;
+  align-items:center;
+  justify-content: flex;
+ margin-top: 50px;
+  margin-bottom: -100px;
+  background-color: rgba(128, 128, 128, 0.199);
+}
+
+.submit {
+   background: #3D94F6;
+   background-image: -webkit-linear-gradient(top, #3D94F6, #FF3292);
+   background-image: -moz-linear-gradient(top, #3D94F6, #FF3292);
+   background-image: -ms-linear-gradient(top, #3D94F6, #FF3292);
+   background-image: -o-linear-gradient(top, #3D94F6, #FF3292);
+
+   -webkit-border-radius: 100px;
+   -moz-border-radius: 100px;
+   border-radius: 100px;
+   color: #FFFFFF;
+   font-family: Georgia;
+   font-size: 29px;
+   font-weight: 100;
+   padding: 8px;
+   -webkit-box-shadow: 0 1px 20px 0 #000000;
+   -moz-box-shadow: 0 1px 20px 0 #000000;
+   box-shadow: 0 1px 20px 0 #000000;
+   border: ridge #0059A0 0;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+}
+
+.submit:hover {
+   border: solid #FFAE00 1px;
+   background: #1E4BD0;
+   background-image: -webkit-linear-gradient(top, #1E4BD0, #65F63D);
+   background-image: -moz-linear-gradient(top, #1E4BD0, #65F63D);
+   background-image: -ms-linear-gradient(top, #1E4BD0, #65F63D);
+   background-image: -o-linear-gradient(top, #1E4BD0, #65F63D);
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   text-decoration: none;
+}
