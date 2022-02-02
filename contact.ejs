@@ -25,23 +25,65 @@
     <p>Address : main road khetlawas,  jalore (Raj.) - 343022 </p>
 
 
-<form  action="mailto:hajaram969@gmail.com" method="post" enctype="text/plain">
+ <form action="javascript:sendmail()" method="post">
   <label for="">Name : </label>
-  <input type="text" class="inputt" name="name" value="">
+  <input type="text" id="Name" class="inputt" name="name" value="">
   <label for="">E-mail : </label>
-  <input type="email" class="inputt" name="email" value="">
+  <input type="email" id="Sender" class="inputt" name="email" value="">
   <br>
   <label for="">Your massage : </label>
-  <textarea name="name" class="inputt" rows="8" cols="80"></textarea>
-  <input class="submit" type="submit" name="" value="submit">
+  <textarea name="name" id="Message" class="inputt" rows="8" cols="80"></textarea>
+  <input class="submit hmm" type="submit" name=""   value="submit">
 </form>
 
 
   </div>
+
   <footer>
     Made with ❤️ by HAJA RAM
   </footer>
-</body>
+  <script src="app.js" charset="utf-8"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script type="text/javascript">
+  function sendmail(){
 
+        var name = $('#Name').val();
+        var email = $('#Sender').val();
+
+        var message = $('#Message').val();
+
+        // var body = $('#body').val();
+
+        var Body='Name: '+name+'<br>Email: '+email+'<br>Message: '+message;
+        //console.log(name, phone, email, message);
+
+        Email.send({
+          SecureToken:"81b7e21a-a301-4c59-ae0a-012bf60b8f18",
+          To: 'ruchitradersjalore@gmail.com',
+          From: "rtjalore@gmail.com",
+          Subject: "New message on contact from "+name,
+          Body: Body
+        }).then(
+          message =>{
+            //console.log (message);
+            if(message=='OK'){
+            alert('Your mail has been send. Thank you for connecting.');
+
+            }
+            else{
+              console.error (message);
+              alert('There is error at sending message. ')
+
+            }
+
+          }
+        );
+
+
+
+      }
+  </script>
+</body>
 
 </html>
